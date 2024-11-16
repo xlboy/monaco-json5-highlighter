@@ -1,0 +1,43 @@
+{
+  "name": "monaco-json5-highlighter",
+  "version": "0.1.2",
+  "description": "JSON5 language registration and syntax highlighting for Monaco Editor.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xlboy/monaco-json5-highlighter"
+  },
+  "homepage": "https://github.com/xlboy/monaco-json5-highlighter#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "monaco-editor",
+    "JSON5",
+    "syntax-highlighting",
+    "language-support"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "monaco-editor": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "tsup": "^8.3.5",
+    "@tsconfig/node20": "^20.1.4"
+  }
+}
